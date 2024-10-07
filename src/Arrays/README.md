@@ -10,9 +10,9 @@
 .pop - remove last element
 .shift - remove first element
 ```
-**Note - All above operations will modify original array**
+*****Note - All above operations will modify original array**
 
-#### Create slice & splice
+#### Create slice (It'll not modify original array) & splice (It'll modify original array)
 ```javascript
 .slice - Give you slices by cutting array into pieces based on index
 arr.slice(startIndex, endIndex)
@@ -20,7 +20,7 @@ const str = [1,2,3,4,5,6,7];
 const sliceRes = str.slice(2, 5)); // store result in variable and it will print [3,4,5]
 [Examples](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice#return_a_portion_of_an_existing_array)
 ```
-**Note - Do not modify original array**
+
 ```javascript
 .splice - Give you array after addition or replacement of element
 splice(startIndex, deleteCount, item1, item2, /* …, */ itemN)
@@ -28,7 +28,6 @@ var str=['j','u','r','g','e','n'];
 str.splice(2, 3); // no need to store result in var and it will print [j,u,n]
 [Examples](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice#remove_0_zero_elements_before_index_2_and_insert_drum)
 ```
-**Note - Modify original array**
 
 #### Set
 
